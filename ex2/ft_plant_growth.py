@@ -12,8 +12,8 @@ class Plant:
             f"{self.age_days} days old"
         )
 
-    def grow(self, value: float) -> None:
-        self.height += value
+    def grow(self) -> None:
+        self.height += 0.8
 
     def age(self) -> None:
         self.age_days += 1
@@ -29,7 +29,7 @@ if __name__ == "__main__":
     h = rose.height
     for i in range(1, 8):
         print(f"=== Day {i} ===")
-        rose.grow(0.8)
+        rose.grow()
         rose.age()
         rose.show()
     print(f"Growth this week: {round(rose.height - h, 1)}cm")
