@@ -133,7 +133,7 @@ class Vegetable(Plant):
     def show(self) -> None:
         super().show()
         print(f"Harvest season: {self.harvest_season}")
-        print(f"Nutritional value: {int(self.nutritional_value)}")
+        print(f"Nutritional value: {round(self.nutritional_value)}")
 
     def grow(self) -> None:
         super().grow()
